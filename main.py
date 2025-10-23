@@ -54,10 +54,10 @@ class KelasKuliah:
             for i in range(len(self.daftar_mhs)):
                 print(f"{i+1}. {self.daftar_mhs[i]}")
 
-    def tampilkan_huruf_JL(self):
+    def tampilkan_huruf_DE(self):
         print("\nMahasiswa dengan huruf awal D atau E:")
         for nama in self.daftar_mhs:
-            if nama[0].upper() == "J" or nama[0].upper() == "L":
+            if nama[0].upper() == "D" or nama[0].upper() == "E":
                 print("-", nama)
 
 
@@ -82,7 +82,7 @@ kelas_ti = KelasKuliah("TI-23A5", ruangA)
 
 # Daftar nama mahasiswa baru
 list_mhs = [
-    "JA", "Saul", "Lalo", "Hector", "Fring", "Walter", "Jimmy", "Gelo",
+    "JA", "Saul", "Delo", "Hector", "Fring", "Walter", "Emilio", "Gelo",
     "Lamelo", "Kyre"
 ]
 
@@ -97,4 +97,4 @@ for nama in list_mhs:
 
 
 kelas_ti.tampilkan_semua()
-kelas_ti.tampilkan_huruf_JL()
+kelas_ti.tampilkan_huruf_DE()
